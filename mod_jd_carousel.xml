@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+  <name>JD Carousel</name>
+  <author>Joomdev</author>
+  <version>1.7.0</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description>MOD_JD_CAROUSEL</description>
+  <authorEmail>info@joomdev.com</authorEmail>
+  <authorUrl>www.joomDev.com</authorUrl>
+  <creationDate>29/6/2018</creationDate> 
+  <updateservers>
+		<server type="extension" name="mod_jd_carousel" priority="1">https://www.joomdev.com/extensionupdates/mod_jd_carousel</server>
+	</updateservers>
+  <files>
+    <filename>mod_jd_carousel.xml</filename>
+    <filename module="mod_jd_carousel">mod_jd_carousel.php</filename>
+    <filename>index.html</filename>
+	  <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <languages>
+		<language folder="admin" tag="en-GB">en-GB.mod_jd_carousel.ini</language>
+		<language folder="admin" tag="en-GB">en-GB.mod_jd_carousel.sys.ini</language>
+  </languages>
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+
+			<field name="jd_carousel"
+			  type="Repeatable"
+			  select="Choose Option"
+			  icon="list"
+			  description=""
+			  label="MOD_JD_CAROUSEL_CREATE_CAROUSE_LABEL">
+			  <fields name="params">
+				<fieldset hidden="true" name="jd_carousel_modal" repeat="true">
+					<field name="jd_carousel_img" type="media" default="" label="MOD_JD_CAROUSEL_IMG_LABEL" description="MOD_JD_CAROUSEL_IMG_DESC" />
+					<field name="jd_carousel_CapitionTitle" type="text" default="" label="MOD_JD_CAROUSEL_CAPTION_TITTLE_LABEL" description="MOD_JD_CAROUSEL_CAPTION_TITTLE_DESC" />
+					<field name="jd_carousel_CapitionSubTitle" type="text" default="" label="MOD_JD_CAROUSEL_SUBCAPTION_TITLE_LABEL" description="MOD_JD_CAROUSEL_SUBCAPTION_TITLE_DESC" />
+				</fieldset>
+			  </fields>
+			</field>
+      	<field name="arrow" type="radio" default="0"  class="btn-group btn-group-yesno" label="MOD_JD_CAROUSEL_ENABLE_ARROW_LABEL">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+       </field>   
+      <field name="indicate" type="radio" default="0"  class="btn-group btn-group-yesno" label="MOD_JD_CAROUSEL_ENABLE_INDICATE_LABEL">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+       </field> 
+      <field name="caption" type="radio" default="0"  class="btn-group btn-group-yesno" label="MOD_JD_CAROUSEL_ENABLE_CAPTION_LABEL">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+       </field> 
+      <field name="bootstrap_3" type="radio" default="0"  class="btn-group btn-group-yesno" label="MOD_JD_CAROUSEL_ENABLEBOOTSRTAP3_LABEL">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+       </field> 
+		</fieldset>
+	</fields>
+</config>
+</extension>
