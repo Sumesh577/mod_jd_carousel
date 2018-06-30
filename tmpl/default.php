@@ -12,8 +12,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
   </style>
 
   <?php if($jd_bootstrap_3 == 1): ?>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <?php JHtml::_('bootstrap.framework'); ?>
   <?php endif; ?>
 
 <div id="jd_carousel_<?php echo $module->id; ?>" class="carousel slide" data-ride="carousel">
