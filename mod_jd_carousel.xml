@@ -22,6 +22,7 @@
 	  <filename>helper.php</filename>
     <filename>tmpl/default.php</filename>
     <filename>tmpl/index.html</filename>
+    <folder>assets</folder>
   </files>
   <languages>
 		<language folder="admin" tag="en-GB">en-GB.mod_jd_carousel.ini</language>
@@ -40,8 +41,11 @@
 			  <fields name="params">
 				<fieldset hidden="true" name="jd_carousel_modal" repeat="true">
 					<field name="jd_carousel_img" type="media" default="" label="MOD_JD_CAROUSEL_IMG_LABEL" description="MOD_JD_CAROUSEL_IMG_DESC" />
-					<field name="jd_carousel_CapitionTitle" type="text" default="" label="MOD_JD_CAROUSEL_CAPTION_TITTLE_LABEL" description="MOD_JD_CAROUSEL_CAPTION_TITTLE_DESC" />
-					<field name="jd_carousel_CapitionSubTitle" type="text" default="" label="MOD_JD_CAROUSEL_SUBCAPTION_TITLE_LABEL" description="MOD_JD_CAROUSEL_SUBCAPTION_TITLE_DESC" />
+					<field name="jd_carousel_Title" type="text" default="" label="MOD_JD_CAROUSEL_CAPTION_TITTLE_LABEL" description="MOD_JD_CAROUSEL_CAPTION_TITTLE_DESC" />
+					<field name="jd_carousel_SubTitle" type="text" default="" label="MOD_JD_CAROUSEL_SUBCAPTION_TITLE_LABEL" description="MOD_JD_CAROUSEL_SUBCAPTION_TITLE_DESC" />
+					<field name="jd_carousel_buttonText" type="text" default="" label="Button Text" description="" />
+					<field name="jd_carousel_buttonlink" type="text" default="" label="Button Link" description="" />
+					<field name="jd_carousel_backgroundImg" type="media" default="" label="Choose Background" description=""  />
 				</fieldset>
 			  </fields>
 			</field>
@@ -53,7 +57,7 @@
           <option value="1">JYES</option>
           <option value="0">JNO</option>
        </field> 
-      <field name="caption" type="radio" default="0"  class="btn-group btn-group-yesno" label="MOD_JD_CAROUSEL_ENABLE_CAPTION_LABEL">
+      <field name="caption" type="hidden" default="0"  class="btn-group btn-group-yesno" label="MOD_JD_CAROUSEL_ENABLE_CAPTION_LABEL">
           <option value="1">JYES</option>
           <option value="0">JNO</option>
        </field> 
